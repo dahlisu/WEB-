@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Siswa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(19, 127, 194);
+        }
+        .navbar {
+            background-color: #119ae9;
+            overflow: hidden;
+            position: fixed; /* Menjadikan navbar melayang */
+            top: 0;
+            width: 100%; /* Memastikan lebar navbar 100% */
+            z-index: 1000; /* Memastikan navbar di atas konten lainnya */
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: grey;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: blue;
+            color: BLACK;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 80px 20px; /* Menambahkan padding atas untuk menghindari konten tertutup oleh navbar */
+        }
+        .card {
+            background-color: rgb(234, 243, 241);
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 50px;
+            width: 250px;
+            overflow: hidden;
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .card h3 {
+            margin: 15px 0 10px;
+        }
+        .card p {
+            margin: 5px 0;
+            color: #666;
+        }
+        .card.jadwal {
+            background-color: #2196F3;; 
+        }
+    </style>
+</head>
+<body>
+    <button id="back-to-top" title="Kembali ke atas">⬆</button>
+</section>
+
+    <div class="navbar">
+        <a href="#home">HOME</a>
+        <a href="#data-siswa">DATA SISWA</a>
+        <a href="#data-guru">DATA GURU</a>
+        <a href="#struktur">STRUKTUR KELAS</a>
+        <a href="#daftar-piket">DAFTAR PIKET</a>
+        <a href="#jadwal-pelajaran">JADWAL PELAJARAN</a>
+        <a href="#kegiatan-kelas">KEGIATAN KELAS</a>
+        <a href="#gallery">GALLERY</a>
+    </div>
+
+    <div id="home" class="container">
+        <div class="home">
+            <style>
+            .home {
+                text-align: center; /* Teks di tengah */
+                padding: 100px 20px; /* Memberi jarak atas dan samping */
+                color: #94a5a2; /* Warna teks */
+            }
+            
+            .home h1 {
+                font-size: 36px; /* Ukuran teks judul */
+                margin-bottom: 20px; /* Jarak antara judul dan paragraf */
+                color: rgb(132, 153, 163); /* Warna teks judul */
+            }
+            .home-logo {
+                max-width: 200px; /* Ukuran maksimum logo */
+    height: auto; /* Menjaga proporsi logo */
+    margin-bottom: 20px; /* Jarak antara logo dan judul */
+            }
+            .home p {
+                font-size: 18px; /* Ukuran teks paragraf */
+                line-height: 1.6; /* Memberikan jarak antar baris */
+                margin: 0 auto; /* Menjaga elemen tetap di tengah */
+                max-width: 600px; /* Membatasi lebar konten */
+            }</style>
+            <img src="FOTO TUGAS/LOGO TPM NEW.png" alt="Logo XI TPM 2" class="home-logo">
+            <h1>Selamat Datang di Data Siswa XI TPM 2</h1>
+            <p>INI ADALAH INFORMASI LENGKAP TENTANG KELAS XI TPM 2.</p>
+            <p>GUNAKAN MENU NAVIGASI DI ATAS UNTUK MENJELAJAHI INFORMASI YANG TERSEDIA.</p>
+        </div>
+    </div>
+
+    <div id="data-siswa" class="container">
+        <div class="card">
+            <img src="FOTO TUGAS/1.jpg" alt="Foto 1">
+            <h3>Nama: MOCHAMMAD IKHSANUL ALFA</h3>
+            <p>Kelas: XI-TPM 2</p>
+            <p>TTL: TUBAN-06-12-2007</p>
+            <p>NISN :0077877986</p>
+            <p>ALAMAT: Dsn.Sumber Arum,Desa Sawir Kec. Tambakboyo</p>
+        </div>
+
+        <div class="card">
+            <img src="FOTO TUGAS/2.jpg" alt="Foto 2">
+            <h3>Nama: MOH.NUR HADI PRASTYO</h3>
+            <p>Kelas: XI-TPM 2</p>
+            <p>TTL: TUBAN-04-11-2007</p>
+            <p>NISN :0071271120</p>
+            <p>ALAMAT: Desa Remen, Kec. Jenu</p>
+        </div>
+
+        <div class="card">
+            <img src="FOTO TUGAS/3.jpg" alt="Foto 3">
+            <h3>Nama: MOH.NURUL IMAN</h3>
+            <p>Kelas: XI-TPM 2</p>
+            <p>TTL: TUBAN-24-04-2007</p>
+            <p>NISN : 0073296161</p>
+            <p>ALAMAT: Dsn. Sumber Arum, Desa Sawir Kec. Tambakboyo</p>
+        </div>
+
+        <div class="card">
+            <img src="FOTO TUGAS/4.jpg" alt="Foto 4">
+            <h3>Nama: MUHAMAD RIZKY</h3>
+            <p>Kelas: XI-TPM 2</p>
+            <p>TTL: TUBAN-11-08-2007</p>
+            <p>NISN : 0072454958</p>
+            <p>ALAMAT: Dsn.Satriyan, Desa Glondonggede, Kec. Tambakboyo</p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/5.jpg" alt="Foto 5">
+            <h3>Nama: MUHAMMAD HUSEIN BACHTIAR</h3>
+            <p>Kelas: XI-TPM 2</p>
+            <p>TTL: TUBAN-26-04-2007</p>
+            <p>NISN : 0078297777</p>
+            <p>ALAMAT: Desa Remen, Kec.Jenu</p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/6.jpg" alt="Foto 6">
+            <h3>Nama: MUHAMMAD IRFAN NURUDDIN</h3>
+            <p>Kelas: XI-TPM 2</p>
+            <p>TTL: TUBAN-31-08-2007</p>
+            <p>NISN : 0071101954</p>
+            <p>ALAMAT: Desa Bancar, Kec. Bancar</p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/7.jpg" alt="Foto 7">
+            <h3>Nama: MUHAMMAD KHOIRUL ANAM ZAHRONI</h3>
+            <p>Kelas: XI-TPM 2</p>
+            <p>TTL: TUBAN-29-12-2007</p>
+            <p>NISN : 0071943624</p>
+            <p>ALAMAT: DEsa Glondonggede, Kec. Tambakboyo</p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/8.jpg" alt="Foto 8">
+            <h3>Nama: MUHAMMAD SYAAMIL AZHAR MAULIDAN</h3>
+            <p>Kelas: XI-TPM 2</p>
+            <p>TTL: TUBAN-19-03-2008</p>
+            <p>NISN : 0089159783</p>
+            <p>ALAMAT: Desa Klutuk, Kec. Tambakboyo</p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/9.jpg" alt="Foto 9">
+            <h3>Nama: Mukhammad Wiji Utama</h3>
+            <p>Kelas: XI-TPM 2</p>
+            <p>TTL: TUBAN-08-04-2007</p>
+            <p>NISN : 0089285130</p>
+            <p>ALAMAT: Dusun Pule, Desa Mander, Kec. Tambakboyo </p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/10.jpg" alt="Foto 10">
+            <h3>Nama: NUR ISMAIL IBBADUR ROHMAN</h3>
+            <p>Kelas: XI-TPM 2</p>
+            <p>TTL: TUBAN-20-12-2007</p>
+            <p>NISN : 0077640824</p>
+            <p>ALAMAT: Desa Cingklung, Kec. Bancar </p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/11.jpg" alt="Foto 11">
+            <h3>Nama: NURWAN FAQIH SANJAKA </h3>
+            <p>Kelas: XI-TPM 2</p>
+            <p>TTL: TUBAN-11-07-2007</p>
+            <p>NISN : 0074409339</p>
+            <p>ALAMAT: Dusun Kradenan, Desa Sukolilo, Kec. Bancar</p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/12.jpg" alt="Foto 12">
+            <h3>Nama: PRADITIA</h3>
+            <p>Kelas: XI-TPM 2</p>
+            <p>TTL: TUBAN-21-01-2008</p>
+            <p>NISN : 0084440003</p>
+            <p>ALAMAT: Dsn Glondong, Desa Glondonggede Kec. Tambakboyo</p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/13.jpg" alt="Foto 13">
+            <h3>Nama: RADIN SYAFIQ PARATE</h3>
+            <p>Kelas: XI-TPM 2</p>
+            <p>TTL: JAKARTA-12-01-2008</p>
+            <p>NISN : 0084558962</p>
+            <p>ALAMAT: Desa Klutuk, Kec Tambakboyo</p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/14.jpg" alt="Foto 14">
+            <h3>Nama: RAFI DWI PRASETYO</h3>
+            <p>Kelas: XI-TPM 2</p>
+            <p>TTL: TUBAN-24-07-2024</p>
+            <p>NISN : 0082809304</p>
+            <p>ALAMAT: Desa Sotang, Kec. Tambakboyo</p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/15.jpg" alt="Foto 15">
+            <h3>Nama: Ravril Fatkur Rozi</h3>
+            <p>Kelas: XI-TPM 2</p>
+            <p>TTL: TUBAN-22-08-2007</p>
+            <p>NISN : 0077733296</p>
+            <p>ALAMAT: Desa Bancar, Kec. Bancar</p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/16.jpg" alt="Foto 16">
+            <h3>Nama: RENDY ALFIANSYAH</h3>
+            <p>Kelas: XI-TPM 2</p>
+            <p>TTL: TUBAN-20-04-2008</p>
+            <p>NISN : 0087805811</p>
+            <p>ALAMAT: Desa Tasikharjo, Kec. Jenu</p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/17.jpg" alt="Foto 17">
+            <h3>Nama: RENDY ANDIKA PRATAMA</h3>
+            <p>Kelas: XI-TPM 2</p>
+            <p>TTL: TUBAN-16-08-2006</p>
+            <p>NISN : 0065134590</p>
+            <p>ALAMAT: Desa Karangasem, KeC. Jenu</p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/18.jpg" alt="Foto 18">
+            <h3>Nama: RIFKI DWI OKTAVIAN</h3>
+            <p>Kelas: XI-TPM 2</p>
+            <p>TTL: TUBAN-31-10-2007</p>
+            <p>NISN : 0087021287</p>
+            <p>ALAMAT: Desa Sumurgeneng, Kec. Jenu</p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/19.jpg" alt="Foto 19">
+            <h3>Nama: RIO ADI PRATAMA</h3>
+            <p>Kelas: XI-TPM 2</p>
+            <p>TTL: TUBAN-11-10-2008</p>
+            <p>NISN : 0083894172</p>
+            <p>ALAMAT: Dusun Siman, Desa Kasiman, Kec. Kerek</p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/20.jpg" alt="Foto 20">
+            <h3>Nama: Rizki Ikmal Zaki</h3>
+            <p>Kelas: XI-TPM 2</p>
+            <p>TTL: TUBAN-23-12-2007</p>
+            <p>NISN : 0076948730</p>
+            <p>ALAMAT: Dsn. Satriyan, Desa Glondonggede Kec.Tambakboyo</p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/21.jpg" alt="Foto 21">
+            <h3>Nama: Robbi Dwi Atmojo</h3>
+            <p>Kelas: XI-TPM 2</p>
+            <p>TTL: TUBAN-23-11-2007</p>
+            <p>NISN : 0074529742</p>
+            <p>ALAMAT: Dusun Karang Pacar, Desa Sidomulyo, Kec. Bancar</p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/22.jpg" alt="Foto 22">
+            <h3>Nama: Sahrul Adi Saputra</h3>
+            <p>Kelas: XI-TPM 2</p>
+            <p>TTL: TUBAN-27-01-2007</p>
+            <p>NISN : 0072331402</p>
+            <p>ALAMAT: Dusun Pule,Desa Mander, Kec. Tambakboyo</p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/23.jpg" alt="Foto 23">
+            <h3>Nama: SAMUEL FEBRIYAN</h3>
+            <p>Kelas: XI-TPM 2</p>
+            <p>TTL: TUBAN-09-11-2007</p>
+            <p>NISN : 0071248649</p>
+            <p>ALAMAT: Dusun Kanoman, Desa Wolutengah, Kec.Kerek</p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/24.jpg" alt="Foto 24">
+            <h3>Nama: SAYIDUL IKHWAL</h3>
+            <p>Kelas: XI-TPM 2</p>
+            <p>TTL: TUBAN-30-07-2008</p>
+            <p>NISN : 0085057317</p>
+            <p>ALAMAT: Dusun Pasatan, Desa Cokrowati, Kec.Tambakboyo</p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/25.jpg" alt="Foto 25">
+            <h3>Nama: Shahrial Ilham Permana</h3>
+            <p>Kelas: XI-TPM 2</p>
+            <p>TTL: </p>
+            <p>NISN : 0079566509</p>
+            <p>ALAMAT: Dusun Ngampel, Desa Ngampelrejo, Kec. Bancar</p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/26.jpg" alt="Foto 26">
+            <h3>Nama: Shahril Pratama</h3>
+            <p>Kelas: XI-TPM 2</p>
+            <p>TTL: TUBAN-29-05-2007</p>
+            <p>NISN : 0073818648</p>
+            <p>ALAMAT: Desa Socorejo, Kec. Jenu</p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/27.jpg" alt="Foto 27">
+            <h3>Nama: SIGIT SETIAWAN</h3>
+            <p>Kelas: XI-TPM 2</p>
+            <p>TTL: TUBAN-20-01-2008</p>
+            <p>NISN : 0084955257</p>
+            <p>ALAMAT: Desa Mliwang, Kec. Kerek</p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/28.jpg" alt="Foto 28">
+            <h3>Nama: Soufik Bayu Saputra</h3>
+            <p>Kelas: XI-TPM 2</p>
+            <p>TTL: TUBAN-12-04-2008</p>
+            <p>NISN : 0085398565</p>
+            <p>ALAMAT: Dusun Ngimbang, Desa Cingklung, Kec. Kerek</p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/29.jpg" alt="Foto 29">
+            <h3>Nama: SUHAR ISMANDI</h3>
+            <p>Kelas: XI-TPM 2</p>
+            <p>TTL: TUBAN-14-10-2007</p>
+            <p>NISN : 0072097517</p>
+            <p>ALAMAT: Desa Mliwang, kec.Kerek</p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/30.jpg" alt="Foto 30">
+            <h3>Nama: Trio Reza Romadhani</h3>
+            <p>Kelas: XI-TPM 2</p>
+            <p>TTL: Tuban-10-10-2007</p>
+            <p>NISN : 0074839769</p>
+            <p>ALAMAT: Dusun Dukuhan, Desa Mander, Kec. Tambakboyo</p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/31.jpg" alt="Foto 31">
+            <h3>Nama: VIEGO RENATA</h3>
+            <p>Kelas: XI-TPM 2</p>
+            <p>TTL: TUBAN-12-07-2007</p>
+            <p>NISN : 0074886335</p>
+            <p>ALAMAT: Desa Klutuk, Kec. Tambakboyo</p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/32.jpg" alt="Foto 32">
+            <h3>Nama: WAHYU HENDRA PRASETYO</h3>
+            <p>Kelas: XI-TPM 2</p>
+            <p>TTL: TUBAN-14-08-2007</p>
+            <p>NISN : 0075545198</p>
+            <p>ALAMAT: Dusun Jamong, Desa Sobontoro, Kec. Tambakboyo</p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/33.jpg" alt="Foto 33">
+            <h3>Nama: Wahyu Nauri Arridho</h3>
+            <p>Kelas: XI-TPM 2</p>
+            <p>TTL: TUBAN-01-05-2007</p>
+            <p>NISN : 3075353395</p>
+            <p>ALAMAT: Dsn. Jamong, Desa Sobontoro Kec. Tambakboyo</p>
+        </div>
+    </div>
+    <div class="card">
+        <a href="#" class="back-to-top">Kembali ke atas</a>
+    </div>
+   
+    <h1>DATA GURU PENGAJAR</h1> 
+    <div id="data-guru" class="container">
+
+        <div class="card">
+            <img src="FOTO TUGAS/AGUS SISWANTO.png" alt="Foto Ahmad">
+            <h3>KEPALA SEKOLAH</h3>
+            <p>AGUS SISWANTO S.Pd.,M.Pd.</p>
+            <p>Alamat : Kel. Gedungombo Kec. Semanding - Tuban</p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/YUNI.jpg" alt="Foto Guru A">
+            <h3>Nama: YUNI PONCO H.,S.Si.,Gr</h3>
+            <p>WALI KELAS</p>
+            <p>Jabatan : Guru</p>
+            <p>Alamat : Karang, Kec. Semanding-Tuban</p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/HASAN.jpg" alt="Foto Guru A">
+            <h3>Nama: M.HASAN ARROSID,S.T.</h3>
+            <p>Jabatan : Guru</p>
+            <p>Mata Pelajaran: Teknik Pemesinan - Projek Kreatif Dan Kewirausahaan</p>
+            <p>Alamat : Ngampel, Kec. Bancar</p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/ANTHONY.jpg" alt="Foto Guru A">
+            <h3>Nama: ANTHONY SALIM MASRIKAN,S.Pd.</h3>
+            <p>Jabatan : Guru</p>
+            <p>Mata Pelajaran: Teknik Pemesinan</p>
+            <p>Alamat : Bojonegoro</p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/DANDIK.jpeg" alt="Foto Guru A">
+            <h3>Nama: DANDIK SYAIFUDIN,S.T.</h3>
+            <p>Jabatan : Guru dan Waka Sarana dan Prasarana</p>
+            <p>Mata Pelajaran: Teknik Pemesinan</p>
+            <p>Alamat : Kel. Mondokan, Kec. Tuban</p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/RASMU.jpg" alt="Foto Guru A">
+            <h3>Nama: RASMU,S.Pd.</h3>
+            <p>Jabatan : Guru dan Bendahara BPOPP</p>
+            <p>Mata Pelajaran: Pendidikan Agama Islam Dan Budi Pekerti</p>
+            <p>Alamat : Ds. Temayang, Kec. Kerek, Kab. Tuban</p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS//MUSHOFFA.jpg" alt="Foto Guru A">
+            <h3>Nama: HIDAYATUL MUSHOFFA,S.Pd.</h3>
+            <p>Jabatan : Guru</p>
+            <p>Mata Pelajaran: Bahasa Indonesia</p>
+            <p>Alamat : Padasan, Kec. Kerek</p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/TIKA.jpg" alt="Foto Guru A">
+            <h3>Nama: PRATIKA AGUSTINA WULANDARI,S.Pd.</h3>
+            <p>Jabatan : Guru</p>
+            <p>Mata Pelajaran: Muatan Lokal Bahasa Jawa</p>
+            <p>Alamat : Kayen, Kec. Bancar</p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/FATHU.jpg" alt="Foto Guru A">
+            <h3>Nama: M.FATHU RAHMAN AFANDI,S.Pd.</h3>
+            <p>Jabatan : Guru dan Kakonsli Teknik Pemesinan</p>
+            <p>Mata Pelajaran: Teknik Pemesinan</p>
+            <p>Alamat : Jenggolo, Kec. Jenu</p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/AGUS.jpeg" alt="Foto Guru A">
+            <h3>Nama: AGUS SETIYONO,S.Pd.,Gr.</h3>
+            <p>Jabatan : Guru</p>
+            <p>Mata Pelajaran: Pendidikan Jasmani,Olahraga,Dan Kesehatan</p>
+            <p>Alamat : Latsari, Kec. Tuban</p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/FADA.jpg" alt="Foto Guru A">
+            <h3>Nama: FARIDLATUS SYA'ADAH,S.S.</h3>
+            <p>Jabatan : Guru</p>
+            <p>Mata Pelajaran: BAHASA INGGRIS</p>
+            <p>Alamat : Sotang, Kec. Tambakboyo</p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/ETIK.jpg" alt="Foto Guru A">
+            <h3>Nama: ETTY SETIAWATI,S.Pd.,Gr</h3>
+            <p>Jabatan: Guru</p>
+            <p>Mata Pelajaran: Pendidikan Pancasila Dan Kewarganegaraan</p>
+            <p>Alamat: Tasikmadu Tuban</p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/UMAM.jpg" alt="Foto Guru A">
+            <h3>Nama: KHOTIBUL UMAM</h3>
+            <p>Jabatan: Guru</p>
+            <p>Mata Pelajaran: Teknik Pemesinan</p>
+            <p>Alamat: Kali Untu Kec. Jenu</p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/CHANDRA.jpg" alt="Foto Guru A">
+            <h3>Nama: CANDRA WULANDARI,S.Pd.</h3>
+            <p>Jabatan : Guru</p>
+            <p>Mata Pelajaran: MATEMATIKA</p>
+            <p>Alamat : Pulogede, Kec. Tambakboyo</p>
+                
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/YULIA.jpg" alt="Foto Guru A">
+            <h3>Nama: YULIA SUCI LUSIANA,S.Pd.</h3>
+            <p>Jabatan : Guru</p>
+            <p>Mata Pelajaran: Sejarah</p>
+            <p>Alamat : Tasikharjo, Kec. Jenu</p>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/ZAIDAH.jpg" alt="Foto Guru A">
+            <h3>Nama: NURUL ZAIDAH,S.Pd.,Gr</h3>
+            <p>Jabatan : Guru</p>
+            <p>Mata Pelajaran: Bimbingan Konseling</p>
+            <p>Alamat : Kaliuntu, Kec. Jenu</p>
+        </div>
+
+    </div>
+    <div id="struktur" class="container">
+        <h2>Struktur Kelas</h2>
+        <div class="structure-container">
+            <div class="card">
+                <img src="FOTO TUGAS/FATHU.jpg" alt="Foto ">
+                <h3>KEPALA JURUSAN</h3>
+                <p>M.FATHU RAHMAN AFANDI,S.Pd.</p>
+            </div>
+            <div class="card">
+                <img src="FOTO TUGAS/YUNI.jpg" alt="Foto Guru A">
+                <h3>WALI KELAS</h3>
+                <p>Nama: YUNI PONCO H.,S.Si.,Gr</p>
+            </div>
+            <div class="card">
+                <img src="FOTO TUGAS/4.jpg" alt="Foto 4">
+                <h3>KETUA KELAS</h3>
+                <p>MUHAMMAD RIZKY</p>
+            </div>
+            <div class="card" >
+                <img src="FOTO TUGAS/32.jpg" alt="Foto 32">
+                <h3>WAKIL KETUA KELAS</h3>
+                <p>WAHYU HENDRA PRASETYO</p>
+            </div>
+            <div class="card">
+                <img src="FOTO TUGAS/16.jpg" alt="Foto 16">
+                <h3>SEKERTARIS</h3>
+                <p>RENDY ALFIANSYAH</p>
+            </div>
+            <div class="card">
+                <img src="FOTO TUGAS/22.jpg" alt="Foto 22">
+                <h3>BENDAHARA</h3>
+                <p>SAMUEL FEBRIYAN</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="daftar-piket" class="container">
+        <h2>Daftar Piket</h2>
+        <div class="card jadwal">
+            <h2>Senin:</h2>
+            <ul>
+                <li>HADI</li>
+                <li>ALFA</li>
+                <li>NURUL</li>
+                <li>ANAM</li>
+                <li>HUSAIN</li>
+                <li>IRFAN</li>
+            </ul>
+        </div>
+        
+        <div class="card jadwal">
+            <h2>Selasa:</h2>
+            <ul>
+                <li>ADIT</li>
+                <li>DIBAD</li>
+                <li>NURWAN</li>
+                <li>TAMA</li>
+                <li>SYAMIL</li>
+                <li>RADIN</li>
+            </ul>
+        </div>
+        
+        <div class="card jadwal">
+            <h2>Rabu:</h2>
+            <ul>
+                <li>RIZKI</li>
+                <li>RENDY</li>
+                <li>REVRIL</li>
+                <li>RAFI</li>
+                <li>RENDY</li>
+                <li>IKMAL</li>
+            </ul>
+        </div>
+
+        <div class="card jadwal">
+            <h2>Kamis:</h2>
+            <ul>
+                <li>SAMUEL</li>
+                <li>ILHAM</li>
+                <li>IWAN</li>
+                <li>RIO</li>
+                <li>MONDI</li>
+                <li>PUTRA</li>
+            </ul>
+        </div>
+
+        <div class="card jadwal">
+            <h2>Jumat:</h2>
+            <ul>
+                <li>VIEGO</li>
+                <li>HENDRA</li>
+                <li>NAURI</li>
+                <li>SIGIT</li>
+                <li>BAYU</li>
+                <li>REZA</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="jadwal-pelajaran" class="container">
+        <h2>JADWAL PELAJARAN</h2>
+        <div class="card jadwal">
+            <h2>Senin:</h2>
+            <ul>
+                <li>PRODUKTIF TPM </li>
+                <li>PRODUKTIF TPM</li>
+                <li>PRODUKTIF TPM</li>
+            </ul>
+        </div>
+        <div class="card jadwal">
+            <h2>Selasa:</h2>
+            <ul>
+                <li>B INGGRIS</li>
+                <li>PAI</li>
+                <li>B INDONESIA</li>
+                <li>MTK</li>
+            </ul>
+        </div>
+        <div class="card jadwal">
+            <h2>Rabu:</h2>
+            <ul>
+                <li>PRODUKTIF PILIHAN TPM</li>
+                <li>PRODUKTIF TPM</li>
+                <li>PROJEK KREATIF DAN KEWIRAUSAHAAN</li>
+                <li>MULOK BAHASA JAWA</li>
+                <li>PPKN</li>
+                <li>SEJARAH</li>
+            </ul>
+        </div>
+        <div class="card jadwal">
+            <h2>Kamis:</h2>
+            <ul>
+                <li>PENJASKES</li>
+                <li>B INGGRIS</li>
+                <li>BIMBIMNGAN KONSELING</li>
+                <li>PRODUKTIF PILIHAN TPM</li>
+                <li>PROJEK KREATIF DAN KEWIRAUSAHAAN</li>
+            </ul>
+        </div>
+        <div class="card jadwal">
+            <h2>Jum'at:</h2>
+            <ul>
+                <li>PRODUKTIF TPM</li>
+                <li>PRODUKTIF TPM</li>
+                
+            </ul>
+        </div>
+    </div>
+    <h1>FOTO KEGIATAN KELAS</h1> 
+    <div id="kegiatan-kelas" class="container">
+        <div class="card">
+            <img src="FOTO TUGAS/kegiatan 1.jpg" alt="Foto ">
+            <img src="FOTO TUGAS/kegiatan 2.jpg" alt="Foto ">
+            <h3>KUNJUNGAN INDUSTRI DI JOGJA</h3>
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/kegiatan 3.jpg" alt="Foto ">
+            <img src="FOTO TUGAS/kegiatan 4.jpg" alt="Foto ">
+            <h3>PUNCAK P5 LOMBA MEMASAK</h3>
+        </div>
+    </div>
+    <h1>GALLERY</h1> 
+    <div id="gallery" class="container">
+        <div class="card">
+            <img src="FOTO TUGAS/kegiatan 1.jpg" alt="Foto ">
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/kegiatan 2.jpg" alt="Foto ">
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/kegiatan 3.jpg" alt="Foto ">
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/gallery 1.jpg" alt="Foto ">
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/gallery 2.jpg" alt="Foto ">
+        </div>
+        <div class="card">
+            <img src="FOTO TUGAS/gallery 3.jpg" alt="Foto ">
+        </div>
+    </div>
+    <div class="card">
+        <a href="#" class="back-to-top">Kembali ke atas</a>
+    </div>
+</body>
+</html>
